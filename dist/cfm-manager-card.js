@@ -1,7 +1,7 @@
 /**
  * CFM Manager Card - Custom Lovelace Card for HACS
  *
- * Version: 1.0.0
+ * Version: 1.0.1
  * Description: Test card for CFM Manager Home Assistant Add-on
  * Repository: https://github.com/wfocsy/cfm-manager-card
  * Author: wfocsy
@@ -225,7 +225,7 @@ class CFMManagerCard extends HTMLElement {
             <span class="sensor-state ${areasState === 'unknown' ? 'unknown' : 'online'}">${areasState}</span>
           </div>
           <div class="button-row">
-            <button @click="${this._loadAreas.bind(this)}">
+            <button class="load-areas-btn">
               Területek Betöltése
             </button>
           </div>
@@ -273,15 +273,12 @@ Hibaelhárítás:
   }
 
   _attachEventListeners() {
-    const buttons = this.shadowRoot.querySelectorAll('button');
-    buttons.forEach(button => {
-      const onClick = button.getAttribute('@click');
-      if (onClick) {
-        button.addEventListener('click', () => {
-          eval(onClick);
-        });
-      }
-    });
+    const loadAreasBtn = this.shadowRoot.querySelector('.load-areas-btn');
+    if (loadAreasBtn) {
+      loadAreasBtn.addEventListener('click', () => {
+        this._loadAreas();
+      });
+    }
   }
 
   _loadAreas() {
@@ -328,7 +325,7 @@ window.customCards.push({
 });
 
 console.info(
-  '%c CFM-MANAGER-CARD %c 1.0.0 ',
+  '%c CFM-MANAGER-CARD %c 1.0.1 ',
   'color: white; background: #4CAF50; font-weight: 700;',
   'color: #4CAF50; background: white; font-weight: 700;'
 );
