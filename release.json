@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "release_date": "2025-01-20",
+  "changelog": {
+    "features": [
+      "Backend connection test",
+      "Areas API integration",
+      "Cycle Managers display",
+      "Debug information section",
+      "HACS compatibility",
+      "Native HA theme support"
+    ],
+    "fixes": [],
+    "breaking_changes": []
+  },
+  "minimum_ha_version": "2024.1.0"
+}
