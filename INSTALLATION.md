@@ -13,7 +13,7 @@
 HACS → Frontend → ⋮ (jobb felső sarok) → Custom repositories
 ```
 
-**Repository URL:** `https://github.com/wfocsy/cfm-manager-card`
+**Repository URL:** `https://github.com/wfocsy/cfm_lovelace`
 **Category:** Lovelace
 
 Kattints: **Add** → **Download** → **Restart HA**
@@ -196,8 +196,8 @@ Részletek: [LOVELACE_CARDS_TODO.md](https://github.com/wfocsy/CFM_Manager/blob/
 
 ## 💬 TÁMOGATÁS
 
-- **GitHub Issues:** [Report a bug](https://github.com/wfocsy/cfm-manager-card/issues)
-- **Discussions:** [Ask a question](https://github.com/wfocsy/cfm-manager-card/discussions)
+- **GitHub Issues:** [Report a bug](https://github.com/wfocsy/cfm_lovelace/issues)
+- **Discussions:** [Ask a question](https://github.com/wfocsy/cfm_lovelace/discussions)
 - **Main Project:** [CFM Manager Add-on](https://github.com/wfocsy/CFM_Manager)
 
 ---

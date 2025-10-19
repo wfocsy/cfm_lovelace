@@ -67,7 +67,7 @@ git commit -m "Initial release v1.0.0
 🤖 Generated with Claude Code"
 
 # Remote hozzáadása (CSERÉLD LE A USERNAME-T!)
-git remote add origin https://github.com/wfocsy/cfm-manager-card.git
+git remote add origin https://github.com/wfocsy/cfm_lovelace.git
 
 # Branch átnevezése (ha szükséges)
 git branch -M main
@@ -104,7 +104,7 @@ Custom Lovelace card for **CFM Manager** (Baromfi Nevelő Rendszer) Home Assista
 
 #### HACS (Recommended)
 1. HACS → Frontend → ⋮ → Custom repositories
-2. Add: `https://github.com/wfocsy/cfm-manager-card`
+2. Add: `https://github.com/wfocsy/cfm_lovelace`
 3. Category: Lovelace
 4. Download → Restart HA
 
@@ -121,7 +121,7 @@ See [INSTALLATION.md](INSTALLATION.md) for detailed steps.
 
 ---
 
-**Full Changelog:** https://github.com/wfocsy/cfm-manager-card/commits/v1.0.0
+**Full Changelog:** https://github.com/wfocsy/cfm_lovelace/commits/v1.0.0
 ```
 
 5. ✅ **Set as the latest release**
@@ -149,7 +149,7 @@ GitHub repository oldalon nézd meg:
 
 1. **HACS** → **Frontend**
 2. **⋮** (jobb felső sarok) → **Custom repositories**
-3. **Repository URL:** `https://github.com/wfocsy/cfm-manager-card`
+3. **Repository URL:** `https://github.com/wfocsy/cfm_lovelace`
 4. **Category:** Lovelace
 5. Kattints: **Add**
 6. Keress: **CFM Manager Card**
@@ -243,7 +243,7 @@ git push origin v1.1.0
 ```bash
 # GitHub API lekérdezés (opcionális)
 curl -H "Accept: application/vnd.github.v3+json" \
-  https://api.github.com/repos/wfocsy/cfm-manager-card
+  https://api.github.com/repos/wfocsy/cfm_lovelace
 
 # Elvárt válasz:
 # - "name": "cfm-manager-card"

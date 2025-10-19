@@ -1,8 +1,8 @@
 # CFM Manager Card
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![GitHub release](https://img.shields.io/github/release/wfocsy/cfm-manager-card.svg)](https://github.com/wfocsy/cfm-manager-card/releases)
-[![License](https://img.shields.io/github/license/wfocsy/cfm-manager-card.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/release/wfocsy/cfm_lovelace.svg)](https://github.com/wfocsy/cfm_lovelace/releases)
+[![License](https://img.shields.io/github/license/wfocsy/cfm_lovelace.svg)](LICENSE)
 
 Custom Lovelace card for **CFM Manager** (Baromfi Nevelő Rendszer) Home Assistant Add-on.
 
@@ -28,7 +28,7 @@ Custom Lovelace card for **CFM Manager** (Baromfi Nevelő Rendszer) Home Assista
 1. Open **HACS** in Home Assistant
 2. Click on **Frontend**
 3. Click the **⋮** menu (top right) → **Custom repositories**
-4. Add repository URL: `https://github.com/wfocsy/cfm-manager-card`
+4. Add repository URL: `https://github.com/wfocsy/cfm_lovelace`
 5. Category: **Lovelace**
 6. Click **Add**
 7. Search for **CFM Manager Card**
@@ -37,7 +37,7 @@ Custom Lovelace card for **CFM Manager** (Baromfi Nevelő Rendszer) Home Assista
 
 ### Method 2: Manual Installation
 
-1. Download `cfm-manager-card.js` from the [latest release](https://github.com/wfocsy/cfm-manager-card/releases)
+1. Download `cfm-manager-card.js` from the [latest release](https://github.com/wfocsy/cfm_lovelace/releases)
 2. Create directory: `/config/www/community/cfm-manager-card/`
 3. Copy `cfm-manager-card.js` to this directory
 4. Add resource to Lovelace:
@@ -271,8 +271,8 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 ## 💬 Support
 
-- **Issues:** [GitHub Issues](https://github.com/wfocsy/cfm-manager-card/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/wfocsy/cfm-manager-card/discussions)
+- **Issues:** [GitHub Issues](https://github.com/wfocsy/cfm_lovelace/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/wfocsy/cfm_lovelace/discussions)
 - **Main Project:** [CFM Manager Add-on](https://github.com/wfocsy/CFM_Manager)
 
 ---

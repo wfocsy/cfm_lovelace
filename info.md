@@ -22,7 +22,7 @@ Custom Lovelace card for **CFM Manager** (Baromfi Nevelő Rendszer) Home Assista
 
 ### Manual Installation
 
-1. Download `cfm-manager-card.js` from the [latest release](https://github.com/wfocsy/cfm-manager-card/releases)
+1. Download `cfm-manager-card.js` from the [latest release](https://github.com/wfocsy/cfm_lovelace/releases)
 2. Copy it to `/config/www/community/cfm-manager-card/`
 3. Add the resource in Lovelace:
    - Settings → Dashboards → Resources → Add Resource
@@ -128,5 +128,5 @@ MIT License - See LICENSE file for details
 
 ## Support
 
-- [Report Issues](https://github.com/wfocsy/cfm-manager-card/issues)
-- [Discussion Forum](https://github.com/wfocsy/cfm-manager-card/discussions)
+- [Report Issues](https://github.com/wfocsy/cfm_lovelace/issues)
+- [Discussion Forum](https://github.com/wfocsy/cfm_lovelace/discussions)
