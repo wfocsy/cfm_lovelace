@@ -79,12 +79,12 @@ class CfmManagerCardEditor extends HTMLElement {
 
       <div class="config-editor">
         <div class="config-header">
-          <h3>CFM Manager Card - Beállítások</h3>
+          <h3>CFM Manager Card</h3>
         </div>
 
         <div class="config-section">
           <label class="config-label">
-            Cycle Manager választása
+            Melyik manager-t jelenítse meg ez a kártya?
             <span class="required">*</span>
           </label>
 
@@ -94,7 +94,7 @@ class CfmManagerCardEditor extends HTMLElement {
               id="manager-select"
               .value="${this._config.manager_id || ''}"
             >
-              <option value="">-- Válassz Cycle Managert --</option>
+              <option value="">-- Válassz --</option>
               ${managers.map(m => `
                 <option
                   value="${m.id}"
@@ -106,14 +106,10 @@ class CfmManagerCardEditor extends HTMLElement {
             </select>
           ` : `
             <div class="warning-box">
-              ⚠️ Nem található Cycle Manager!<br>
-              Hozz létre legalább egy Cycle Manager-t a Setup felületen.
+              Nincs elérhető Cycle Manager sensor.<br>
+              Ellenőrizd: sensor.manager_*_cycle_status létezik?
             </div>
           `}
-
-          <small class="help-text">
-            Válaszd ki a megjelenítendő Cycle Manager-t
-          </small>
         </div>
 
         <div class="config-section">
@@ -129,7 +125,7 @@ class CfmManagerCardEditor extends HTMLElement {
           />
 
           <small class="help-text">
-            Automatikus napi adat mentés időpontja (alapértelmezett: 07:00)
+            Automatikus időzítő (Fázis 4 funkció)
           </small>
         </div>
 
@@ -140,12 +136,8 @@ class CfmManagerCardEditor extends HTMLElement {
               id="show-notifications"
               ${this._config.show_notifications !== false ? 'checked' : ''}
             />
-            Értesítések megjelenítése
+            Értesítések
           </label>
-
-          <small class="help-text">
-            Értesítések megjelenítése napi mentéskor és egyéb eseményeknél
-          </small>
         </div>
 
         <div class="config-section">
@@ -155,25 +147,8 @@ class CfmManagerCardEditor extends HTMLElement {
               id="show-debug"
               ${this._config.show_debug === true ? 'checked' : ''}
             />
-            Debug mód (konzol logolás)
+            Debug mód
           </label>
-
-          <small class="help-text">
-            Részletes logolás a böngésző konzolban (csak fejlesztéshez)
-          </small>
-        </div>
-
-        <div class="config-info">
-          <strong>Szükséges szenzorok:</strong>
-          <ul>
-            <li>sensor.manager_X_cycle_status</li>
-            <li>sensor.manager_X_current_cycle_id</li>
-            <li>sensor.manager_X_cycle_day</li>
-            <li>sensor.manager_X_current_stock</li>
-            <li>sensor.manager_X_average_weight</li>
-            <li>sensor.manager_X_fcr</li>
-            <li>...és további ciklus adatok</li>
-          </ul>
         </div>
       </div>
     `;
