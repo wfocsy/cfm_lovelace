@@ -1,17 +1,22 @@
 {
-  "version": "1.0.0",
-  "release_date": "2025-01-20",
+  "version": "2.0.0",
+  "release_date": "2025-10-20",
   "changelog": {
     "features": [
-      "Backend connection test",
-      "Areas API integration",
-      "Cycle Managers display",
-      "Debug information section",
-      "HACS compatibility",
-      "Native HA theme support"
+      "State machine (PRE-START, ACTIVE, CLOSED, UNKNOWN)",
+      "Sensor integration (9 sensors)",
+      "Config editor (manager selection, daily save time)",
+      "Responsive UI (mobile + desktop)",
+      "Debug mode",
+      "Production build (dist/cfm-manager-card-v2.js)",
+      "Modular source code (src/card-main.js, src/card-config.js, src/styles/card-styles.js)"
     ],
     "fixes": [],
-    "breaking_changes": []
+    "breaking_changes": [
+      "v1.0.x deprecated - Use dist/cfm-manager-card-v2.js instead"
+    ]
   },
-  "minimum_ha_version": "2024.1.0"
+  "minimum_ha_version": "2024.1.0",
+  "phase": "Phase 1: Card Basics",
+  "next_phase": "Phase 2: PRE-START UI (cycle start form)"
 }
